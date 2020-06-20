@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+body {
+  background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
