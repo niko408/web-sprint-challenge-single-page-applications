@@ -8,6 +8,10 @@ const CtaCont = styled.div`
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
+    background-image: url("/Assets/Pizza.jpg");
+    background-position: no-repeat;
+    background-size: cover;
+    color: white;
     `;
 const BigWord = styled.p`
     font-size: 5rem;

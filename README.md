@@ -32,8 +32,16 @@ d to return to old code for any number of reasons) and your team lead as the eva
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+
+You can write a custom hook to match routes to parameters without needing to render multiple routes separately and customize them.
+
 1. How would you explain form validation to someone who has never programmed before?
+
+It's basically just checking to see if your answers match the required criteria to pass the data through the form
+
 1. In 1-2 sentences, define end to end testing.
+
+End to end testing is when you test an app through the scope of how a user would interact with the app.
 
 ## Instructions
 

@@ -3,43 +3,46 @@ import { Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Order from './Order';
 import styled from 'styled-components';
+import './App.css';
 
 const NavBarText = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-decoration: none;
-  margin: auto 5%;
+  margin: 0 5%;
+  color: white;
   `;
 const Logo = styled.p`
   font-size: 3rem;
-  margin: 0;
+  margin: 0 0 0 1%;
   width: 30%;
+  color: white;
   `;
 const Links = styled.div`
   display: flex;
-  flex-direction: flex-end;
-  margin-right: 2%;
-  width: 10%;
+  justify-content: flex-end;
+  width: 20%;
+  margin-bottom: 0.5%;
+  color: white;
   `;
 const NavBar = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: baseline;
-  margin: 1% 0% 10% 1%;
+  background:black;
+  margin-bottom:12%;
+  padding: 0.5% 0;
   `;
-
-  
-
 
 const App = () => {
   return (
     <>
       <NavBar>
         <Logo>Lambda Eats</Logo>
-          <Links>
-            <NavBarText><Link to='/'>Home</Link></NavBarText>
-            <NavBarText><Link to='/pizza'>Order Now</Link></NavBarText>
-          </Links>
+        <Links>
+          <NavBarText><Link to='/'>Home</Link></NavBarText>
+          <NavBarText><Link to='/pizza'>Order Now</Link></NavBarText>
+        </Links>
       </NavBar>
         <Route exact path='/' component={Home}></Route>
         <Route path='/pizza' component={Order}></Route>
